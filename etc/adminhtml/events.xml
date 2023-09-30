@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<config xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../../../../../lib/internal/Magento/Framework/Event/etc/events.xsd'>
+	<event name='catalog_product_save_before'>
+		<observer
+			name='OsmanSorkar\MultiCart\Event\Catalog\Controller\Adminhtml\Product\Save'
+			instance='OsmanSorkar\MultiCart\Event\Catalog\Controller\Adminhtml\Product\Save'
+		/>
+	</event>
+
+	<event name='admin_user_save_before'>
+		<observer
+				name='OsmanSorkar\MultiCart\Event\User\Save'
+				instance='OsmanSorkar\MultiCart\Event\User\Save'
+		/>
+	</event>
+
+	<event name='controller_action_postdispatch_adminhtml_system_account_save'>
+		<observer
+				name='OsmanSorkar\MultiCart\Event\System\Account\Save'
+				instance='OsmanSorkar\MultiCart\Event\System\Account\Save'
+		/>
+	</event>
+
+
+</config>
